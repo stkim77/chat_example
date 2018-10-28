@@ -1,0 +1,21 @@
+.rooms {
+    display         : flex;
+    flex-direction  : column;
+    width           : 500px;
+    margin          : auto;
+    margin-top      : 100px;
+    border          : 1px solid #000000;
+    padding         : 10px;
+}
+
+.rooms div {
+    border      : 1px solid #000000;
+    padding     : 3px 20px;
+    margin      : 5px 0;
+    cursor      : pointer;
+    font-size   : 20px;
+}
+
+.rooms div:hover {
+    background-color: gray;
+}

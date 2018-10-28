@@ -1,0 +1,148 @@
+.room {
+    display         : flex;
+    width           : 600px;
+    flex-direction  : column;
+    margin          : auto;
+    margin-top      : 100px;
+}
+
+.room .room_title {
+    display         : flex;
+    margin-bottom   : 10px;
+    align-items     : flex-end;
+    justify-content : space-between;
+}
+
+.room .room_title .room_name {
+    width       : 400px;
+    font-size   : 20px;
+}
+
+.room .room_title .user_list_btn {
+    border-radius: 3px;
+    padding: 5px 20px;
+    text-align: center;
+    background: #777;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.room .room_title .user_list_btn:hover {
+    background: #3399ff;
+}
+
+.room .room_title .exit_btn {
+    border-radius: 3px;
+    padding: 5px 20px;
+    text-align: center;
+    background: #777;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.room .room_title .exit_btn:hover {
+    background: #3399ff;
+}
+
+.room .chat_display {
+    display         : flex;
+    flex-direction  : column;
+    width           : 100%;
+    height          : 600px;
+    border          : 1px solid #000000;
+    padding         : 10px;
+    overflow-y      : auto;
+    background-color: #93E6FE;
+}
+
+.room .chat_display .mine {
+    display         : flex;
+    flex-direction  : column;
+    width           : 100%;
+    align-items     : flex-end;
+    margin-bottom   : 2px 0;
+    padding         : 1px 0;
+}
+
+.room .chat_display .other {
+    display         : flex;
+    flex-direction  : column;
+    width           : 100%;
+    align-items     : flex-start;
+    padding         : 1px 0;
+    margin-bottom   : 5px;
+}
+
+.room .chat_display .message {
+    background-color: #FFFFFF;
+    margin-top      : 3px;
+    padding         : 3px 5px;
+    border-radius   : 5px;
+    max-width       : 70%;
+}
+
+.room .chat_display img {
+    max-width       : 70%;
+}
+
+.room .chat_display .announce {
+    font-size: 12px;
+    padding: 2px 0;
+    border-bottom: 1px solid #000000;
+    margin: auto;
+    margin-top: 5px;
+}
+
+.room .textForm {
+    display : flex;
+    width   : 100%;
+    padding : 5px;
+}
+
+.room .textForm input[type='text']{
+    flex        : 1;
+    padding     : 3px 5px;
+    margin-right: 5px;
+}
+
+.room .imageForm {
+    display : flex;
+    width   : 100%;
+    padding : 5px;
+}
+
+.room .imageForm input[type='file'] {
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    border:0;
+}
+
+.room .imageForm label {
+    border-radius: 3px;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.room .imageForm label:hover {
+    background: #3399ff;
+}
+
+.room .imageForm input[type='text'] {
+    margin-right: 5px;
+}

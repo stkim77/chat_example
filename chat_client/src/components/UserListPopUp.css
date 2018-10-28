@@ -1,0 +1,81 @@
+.users {
+    display     : flex;
+    position    : absolute;
+    top         : 0;
+    left        : 0;
+    width       : 100%;
+    height      : 100%;
+}
+
+.users .users_dim {
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    background-color: gray;
+    opacity         : 0.5;
+    z-index         : 99;
+}
+
+.users .users_div {
+    display         : flex;
+    flex-direction  : column;
+    width           : 450px;
+    height          : 350px;
+    margin          : auto;
+    background-color: #ffffff;
+    box-shadow      : 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    padding         : 20px;
+    z-index         : 100;
+}
+
+.users .users_div .user_list_title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.users .users_div .user_list_title .close_btn {
+    cursor: pointer;
+    padding: 0 5px;
+}
+
+.users .users_div .user_list_title .close_btn:hover {
+    background-color: grey;
+}
+
+.users .users_div .user_list_div {
+    overflow-y  : auto;
+    border      : 1px solid #000000;
+    padding     : 10px;
+    flex        : 1;
+    font-size   : 13px;
+}
+
+.users .users_div .user_div {
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    margin          : 5px 0;
+    padding-bottom  : 5px;
+    border-bottom   : 1px solid grey;
+}
+
+.users .users_div .user_div .user_name {
+
+}
+
+.users .users_div .user_div .invite_btn {
+    border-radius: 3px;
+    padding: 5px 20px;
+    text-align: center;
+    background: #777;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.users .users_div .user_div .invite_btn:hover {
+    background: #3399ff;    
+}
